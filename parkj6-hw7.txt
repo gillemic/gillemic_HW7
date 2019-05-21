@@ -1,0 +1,24 @@
+Michael Gillett
+
+Instructions:
+
+1. Open pfSense VM and wait for it to load.
+
+2. Once it's loaded, open the "CentOS_CLI" VM
+
+3. Repeat this process for each of the 4 "Alpine" VMs for testing, opening them prematurely could assign them the same ip address
+
+3. On the CentOS_CLI, download and unzip the "gillemic_HW7.zip" file 
+	curl https://raw.githubusercontent.com/gillemic/gillemic_HW7/gillemic_HW7.zip
+
+4. run "ip addr" on alpine machines to verify that their address are:
+192.168.1.20
+192.168.1.21
+192.168.1.22
+192.168.1.23
+
+If not, change the hosts.ini file to the 4 ip addresses actually displayed
+
+5. run the hw7script.sh by typing "./hw7script.sh" on to CentOS_CLI
+
+6. type "password" 4 times for each of the Alpine VM's password prompt.
